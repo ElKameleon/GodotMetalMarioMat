@@ -2,7 +2,7 @@ shader_type spatial;
 render_mode unshaded;
 
 uniform sampler2D matcap_texture;
-uniform vec3 tint_color : source_color = vec3(1.0, 1.0, 1.0); //Tint color to amke things like gold/copper
+uniform vec3 tint_color : source_color = vec3(1.0, 1.0, 1.0); //Tint color to make other metals like gold/copper
 uniform float tint_amount : hint_range(0.0, 1.0) = 0.0;
 uniform float desaturation : hint_range(0.0, 1.0) = 0.0; //Desaturate matcap image, useful to get some dark contrast
 uniform float matcap_scale : hint_range(0.0, 1.0) = 1.0; // Scale for if your matcap material doesn't go all the way to the edge of the image. I use 0.95 for the original metal mario texture
